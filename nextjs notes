@@ -1,0 +1,10 @@
+By default all components that are created in app folder in nextjs are react-server componnets. Which means the initial loading speed in faster as they are rendered in server side.
+
+To Turn server componnets into a client side component we need to use "use client" at the lop of our component file.
+
+When ever we need to use hooks or state we should define the componnet as clent component as state management is handled on the client side.
+
+ISR (Incremental static regeneration): export const regenerate=60 
+When the data coming from api is changing/updating continuously, we use this statement at request or page.jsx or layout.jsx level. So that our nextjs server will automatically re fetches the data form api.  
+
+SSG (static site generation):
